@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Menu</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-submenu.min.css">
+	<link rel="stylesheet" href="css/jquery.smartmenus.bootstrap.css" >
+	
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+</head>
+<body>
+<div class="container">
+
+	<header>
+		
+		<h1><img id="logo" src="Imagen/logomini.gif" alt="METROPOLITANA"></h1>
+		<nav >
+			<ul class="breadcrumb menu-li-control">		
+				<li><span>Bienvenido(a), renerivera</span><span class="divider"></span></li>	       
+		        <li><a href="ResetPassword.jsp">Cuenta</a><span class="divider"></span></li>
+		        
+		       		<li><a href="panelcontrol.jsp">Panel de Control</a><span class="divider"></span></li>
+		       			  
+		       	
+		       	<li>
+					<select class="input-large" id="pri_suc_usu" name="pri_suc_usu">						
+						<option value="25" selected="">MANAGUA 2 MD (PRINCIPAL)</option>
+					</select>
+					<span class="divider">/</span>
+				</li>     	
+				
+		        <li><a href="quit.jsp">Salir</a></li>
+	    	</ul> 	    
+		</nav>	          
+	
+</header>
+
+	
+<div id="navbar">    
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+
+  	
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            
+            
+            <div class="collapse navbar-collapse col-xs-8" id="navbar-collapse-1" >
+                <ul class="nav navbar-nav sf-menu" role="menu">
+                
+
+                  
+      <!--/////////////////////CATALOGO///////////////////////////////////////////////////////-->
+
+
+                    <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle " data-toggle="dropdown">Catalogo<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Clientes</a>
+
+                            	
+								<ul class="dropdown-menu" >
+                                   
+									<li ><a href="#">Crear</a></li>
+									<li ><a href="#">Listar/Editar</a></li>								                                    
+								</ul>
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                              <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Comisiones</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear Comisiones</a></li>
+									<li><a href="#">Listar/Editar Comisiones</a></li>
+									<li><a href="#">Crear Perfil</a></li>
+									<li><a href="#">Duplicar Perfil</a></li>
+									<li><a href="#">Listar/Editar Perfil</a></li>
+
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Personal</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear Persona</a></li>
+									<li><a href="#">Listar/Editar Persona</a></li>
+									<li><a href="#">Crear Empleado</a></li>
+									<li><a href="#">Listar/Editar Empleado</a></li>
+									<li><a href="#">Asignar Metas Empleado</a></li>
+									<li><a href="#">Crear Usuario</a></li>
+									<li><a href="#">Listar/Editar Usuario</a></li>
+									<li><a href="#">Importar Codigo Empleado</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos/Servicio</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear Categoria</a></li>
+									<li><a href="#">Listar/Editar Categoria</a></li>
+									<li><a href="#">Crear Tecnologia</a></li>
+									<li><a href="#">Listar/Editar Tecnologia</a></li>
+									<li><a href="#">Crear Producto/Servicio</a></li>
+									<li><a href="#">Listar/Editar Producto/Servicio</a></li>
+									<li><a href="#">Crear Perfiles Metas</a></li>
+									<li><a href="#">Listar/Editar Perfiles Metas</a></li>
+									<li><a href="#">Agregar Plan Comercial</a></li>
+									<li><a href="#">Listar/Editar Plan Comercial</a></li>
+									<li><a href="#">Agregar Promocion</a></li>
+									<li><a href="#">Listar/Editar Promocion</a></li>
+
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                          <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Proveedores</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Canal de Ventas</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                         <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sucursal</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									<li><a href="#">Agregar Metas Sucursal</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                   <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Estado SICC</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                        <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion Metas</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar Porcentaje de Meta para Planilla</a></li>
+									<li><a href="#">Agregar Meta Empresa</a></li>
+									<li><a href="#">Listar/Editar Meta Empresa</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                            <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Subir Base INSS</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar</a></li>
+									
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                     <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Documento Anexo Venta</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                   <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Residencia</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                        <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Planilla</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar tipo de Planilla</a></li>
+									<li><a href="#">Listar/Editar tipo de Planilla</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                              <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Compra</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar tipo de Compra</a></li>
+									<li><a href="#">Listar/Editar tipo de Compra</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                              <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Gestion Documento</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar tipo de Gestion de Documento</a></li>
+									<li><a href="#">Listar/Editar tipo de Gestion de Documento</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                     <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tipo de Documento</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                      <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Barrio</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear</a></li>
+									<li><a href="#">Listar/Editar</a></li>
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+                                                    <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Estado Cliente</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Gestionar</a></li>
+									
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+                                             
+                        </ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+
+
+
+
+
+           <!--//////////////////// ALMACEN///////////////////////////////////////////////////////////-->
+
+
+                 <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Almacen<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Equipo</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Buscar Equipo</a></li>
+															                                    
+								</ul>
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                              <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actualizar Estado Equipo</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Actualizar un equipo </a></li>
+									<li><a href="#">Actualizar varios equipos</a></li>
+									<li><a href="#">Agregar equipo regreso a Claro</a></li>
+									<li><a href="#">Generar regreso a Claro</a></li>
+									<li><a href="#">Descargue/Cambio de equipo</a></li>
+
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Entrada</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Agregar Entrada Bodega</a></li>
+									<li><a href="#">Listar/Editar Entrada Bodega </a></li>
+									
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Salida</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Asignar Material Sucursal</a></li>
+									<li><a href="#">Asignar Material Cuadrilla</a></li>
+									<li><a href="#">Listar Material Sucursal</a></li>
+									<li><a href="#">Listar Material Cuadrilla</a></li>
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+               
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+
+
+
+
+
+
+
+<!--/////////////////////AQUI ESTA EL TERCER DROPDOWN ALMACEN////////////////////////////////////////////////////-->
+
+                                      <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestion de Contrato<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Agregar Contrato Recibio</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                              <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Agregar Contrato ONBASE</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Agregar Contrato FOTO</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Envio de Contratos Claro</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Crear Envio de Contratos Claro</a></li>
+									<li><a href="#">Listar/Editar Envio de Contratos Claro</a></li>
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Cambiar Estatus de Contrato</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Importar Altas o Estados de Contrato</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Subir Archivos</a></li>
+									<li><a href="#">Modificar Datos</a></li>
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+               
+
+               <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solicitud de Aprobados o Activaciones</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Mandar MSJ</a></li>
+									
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+
+
+
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+ <!--//////////////////////////MORA/////////////////////////////////////////////////////////////-->
+
+
+                                      <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mora <b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Subir Zafra</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+
+        <!--//////////////////////////PLANILLA/////////////////////////////////////////////////////////////-->
+
+
+                  <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Planilla<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Crear Planilla</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                              <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Listar/Editar Planilla</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+						<li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Crear Permiso a Visualizar Planilla</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+				<li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Listar/Editar Permiso a Visualizar Planilla</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+					<li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Crear Deduccion/Otro ingreso Planillas</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                 <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Listar/Editar Deduccion/Otro ingreso Planillas</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+               
+
+                <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Historial de Planillas</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+
+							 <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Resumen de Planillas</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+
+
+							<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes Pago Excel</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Reporte Pago por Planilla</a></li>
+									<li><a href="#">Reporte Pago Planilla Historial</a></li>
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+							 <li > <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Habilitar Planilla Cerrada</a>
+								
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+<!--//////////////////////////////////////////////////////////////////////////////////////-->
+
+
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+
+
+
+
+   <!--//////////////////////////REPORTES/////////////////////////////////////////////////////////////-->
+       
+       <li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Reportes<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Bodega</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Listar Antiguedad de Equipo</a></li>
+									<li><a href="#">Listar Material de Cobro</a></li>
+									<li><a href="#">Listar Material Vs Altas</a></li>
+															                                    
+								</ul>
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+                              <li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Contratos</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Buscar Contrato </a></li>
+									<li><a href="#">Contratos Recibidos Vs Altas</a></li>
+									<li><a href="#">Contratos Onbase Vs Altas</a></li>
+									<li><a href="#">Contratos Foto Vs Altas</a></li>
+									<li><a href="#">Contratos Envio Claro Vs Altas</a></li>
+									<li><a href="#">Contratos Altas Vs Estado Contrato</a></li>
+
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ventas</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Reporte Ventas Grafico</a></li>
+									<li><a href="#">Reporte Ventas Excel</a></li>
+									<li><a href="#">Reporte Ventas Externas</a></li>
+									<li><a href="#">Reporte de Vendedores</a></li>
+									<li><a href="#">Reporte de Instaladores</a></li>
+									<li><a href="#">Reporte de Ventas no Activadas</a></li>
+									<li><a href="#">Reporte de Cumplimiento de Ventas</a></li>
+									<li><a href="#">Exportar Ventas sin Descargue</a></li>
+									<li><a href="#">Reporte de Ventas/ Descargue por digitador</a></li>
+									<li><a href="#">Equipos Descargados</a></li>
+									
+									                                    
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+      <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Indicadores Claro</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Reporte Empaquetamiento de Ventas</a></li>
+									<li><a href="#">Reporte Vendedores Vs Ventas</a></li>
+									<li><a href="#">Reporte de 0 y 1 Pagos</a></li>
+									<li><a href="#">Reporte de 0 a 4 Pagos</a></li>
+									<li><a href="#">Reporte Cliente Activo y Desactivo</a></li>
+									
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Ingresar al Sistema</a></li>
+									
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+					<li class="dropdown dropdown-submenu"> <!--Aqui Inicia el segundosubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">MetroAPP</a>
+								<ul class="dropdown-menu">
+                                   
+									<li><a href="#">Monitor de Tarea</a></li>
+									
+									                               
+								</ul>
+							</li> <!--Aqui finaliza el segundosubmenu dropdown-->
+
+
+
+	<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+               
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+
+
+
+    <!--//////////////////////////VENTAS/////////////////////////////////////////////////////////////-->
+
+<li class="dropdown"> <!--Aqui Inicia el primer dropdown-->
+
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ventas<b class="caret"></b></a> 
+                       <ul class="dropdown-menu">  <!--Aqui Inicia el submenu dropdown-->
+                        
+                                <li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver Historial Solicitud</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+							<li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver Estado Venta</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+				<li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver Ventas</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+							<li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Permisos de Edicion</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu dropdown-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+				<li > <!--Aqui Inicia el primersubmenu dropdown-->
+                            	<a href="#" class="dropdown-toggle" data-toggle="dropdown">estionar Ventas Externa</a>
+								
+							</li> <!--Aqui finaliza el primersubmenu <dropdown-->				</dropdown-->
+
+<!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+							</ul> <!--Aqui finaliza el submenu dropdown-->
+
+                    </li> <!--Aqui Finaliza el primer dropdown-->
+                                         
+
+
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+
+        </nav>
+
+</div>
+</div>
+
+
+
+
+
+
+<!--aqui van los archivos js-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- SmartMenus jQuery plugin -->
+<script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+
+<!-- SmartMenus jQuery Bootstrap Addon -->
+<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+
+
+	
+</body>
+</html>

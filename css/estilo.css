@@ -1,0 +1,388 @@
+*{
+  padding:0;
+  margin:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  background: #eee;
+}
+
+body{
+  font-size: 12px;
+ }
+
+
+.navbar-nav .dropdown-menu > li > a {
+   white-space: pre; 
+}
+
+select {
+   height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.nav-collapse.collapse {
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/*esto es lo de la barra de arriba del panel de control*/
+
+ul.menu-li-control {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    margin: auto;
+    background: none;
+}
+
+.input-large {
+    width: 210px;
+    }
+
+a.btn-agregar,a.btn-agregar,
+  input[type='submit'].btn-agregar, 
+    button[type='button'].btn-agregar {
+  margin: 0 auto !important;
+  display: block !important;
+  margin-top: 5px !important;
+  background: #3a87ad;
+  text-shadow: none;
+  color: #fff;
+}
+
+
+ul li:first-child {
+    border-radius: 8px 0 0 8px;
+}
+.breadcrumb > li {
+    display: inline-block;
+    *display: inline;
+    text-shadow: 0 1px 0 #fff;
+    *zoom: 1;
+}
+li {
+    line-height: 20px;
+}
+.breadcrumb {
+    list-style: none;
+}
+
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin: 0 0 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.breadcrumb>li>.divider {
+    padding: 0 5px;
+    color: #ccc;
+}
+/*aqui termina la barra del panel de contro*/
+
+ #logo{
+  width: 250px;
+  height: 55px;
+  }
+    h1{
+    color: #3f9b8c;
+    font-size: 22px;
+  }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+     border-color: transparent; 
+}
+
+ul li a:hover
+{
+  text-decoration:none !important;
+  
+}
+
+
+.sf-menu li li {
+  background: white;
+  border-radius: 0;
+ font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: normal;
+}
+
+
+
+.nav .navbar-nav .sf-menu ul:hover li {
+  color: blue;
+}
+
+
+
+.sf-menu .dropdown li:hover a {
+  color: #000;
+}
+
+ 
+
+/*esto es lo que hace que se ponga el fondo azul en los */
+.sf-menu li li:hover a {
+  color: white;
+  background-color: #486ba5;
+border-radius: 6px 6px 6px 6px;
+
+}
+
+.sf-menu li li:hover li a {
+  color: white;
+  background-color: white;
+}
+
+.sf-menu li li:hover li:hover a {
+  color: white;
+  background-color: #486ba5;
+}
+
+.sf-menu .dropdown-menu li li:hover li:hover a {
+  color: white;
+  background-color: #486ba5;
+}
+
+/*fondo azul*/
+
+
+
+  .sf-sub-indicator
+  {
+color:#13DA48;
+
+  }
+
+  .caret
+  {
+    color:#13DA48;
+
+  }
+
+  .dropdown
+  {
+    color:#13DA48;
+  }
+
+
+/*------------------------------------------*/  
+.sf-menu li:hover,.sf-menu li.sfHover,.sf-menu a:focus,.sf-menu a:hover,.sf-menu a:active
+  {
+  background-color: white;
+  
+}
+
+.sf-menu a, .sf-menu a:visited {
+    color: white;
+}
+
+/*esto es para la letra*/
+.sf-menu {
+    font-family: Arial !important;
+    font-size: 12px !important;
+    font-weight: normal;
+  }
+
+
+/*---------------------*/
+
+.navbar-default .navbar-nav li:hover a {
+    color: #2f6fa9;
+    display: block;
+    }
+/*---------------*/
+
+.navbar-default {
+    background-color: #3f9b8c;
+    border-color: #fcf8e3;
+}
+
+.navbar .navbar-default .navbar-static-top
+{
+  width: 20vw;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-default  {
+    height: 0;
+    overflow: hidden;
+}
+
+.sf-menu li:hover ul, .sf-menuli:focus ul {
+    height: auto;
+}
+
+.navbar-default .navbar-nav>li>a
+ {
+    color: #fff;
+  }
+.navbar-default .navbar-nav>li>a:hover
+ {
+    color: #2f6fa9 ;
+  }
+
+.navbar-default .navbar-nav li:hover   a {
+  color: #2f6fa9;
+}
+  .navbar-default .navbar-nav li:hover  li a {
+  color: #323130;
+}
+
+.navbar-static-top {
+    border-radius: 10px;}
+
+
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+ 
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}  
+  
+@media (max-width: 767px) {
+
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+
+.col-xs-8 
+{
+    width: 100%;
+}
+
+}
+ 
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+    width: 700px;
+  }
+}  
+
+
+
+/*---------------------------------------------------------*/
+
+.sf-sub-indicator {
+  position: absolute;
+  display: block;
+  right: .15em;
+  top: 10px; /* IE6 only */
+  width: 10px;
+  height: 10px;
+  text-indent: -99em;
+  overflow: hidden;
+  background: url('../Imagen/arrows-ffffff.png') no-repeat -10px -100px;
+  /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+
+a>.sf-sub-indicator { /* give all except IE6 the correct values */
+  top: 19px;
+  background-position: 0 -100px;
+  /* use translucent arrow for modern browsers*/
+}
+/* apply hovers to modern browsers */
+a:focus>.sf-sub-indicator,a:hover>.sf-sub-indicator,a:active>.sf-sub-indicator,li:hover>a>.sf-sub-indicator,li.sfHover>a>.sf-sub-indicator
+  {
+  background-position: -10px -100px;
+  /* arrow hovers for modern browsers*/
+}
+
+/* point right for anchors in subs */
+.sf-menu ul .sf-sub-indicator {
+  background-position: -30px 0;
+}
+
+.sf-menu ul a>.sf-sub-indicator {
+  background-position: 0 0;
+}
+/* apply hovers to modern browsers */
+.sf-menu ul a:focus>.sf-sub-indicator,.sf-menu ul a:hover>.sf-sub-indicator,.sf-menu ul a:active>.sf-sub-indicator,.sf-menu ul li:hover>a>.sf-sub-indicator,.sf-menu ul li.sfHover>a>.sf-sub-indicator
+  {
+  background-position: -30px 0; /* arrow hovers for modern browsers*/
+}
+
